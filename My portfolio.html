@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassandra Mghoi - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: navy;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #00ffff;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background-color: rgba(0, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00ffff;
+            border: none;
+            border-radius: 5px;
+            color: navy;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #00cccc;
+        }
+
+        .cv-button {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: navy;
+            background-color: #00ffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cassandra Mghoi</h1>
+            <p>IT Student | Tech Enthusiast | Problem Solver</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="programming-languages">
+            <h2>Programming Languages</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python (Learning)</span>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an IT student with a burning passion for technology and its potential to transform our world. My drive comes from the belief that technology can be a powerful tool for solving global challenges. I'm constantly learning and exploring new ways to contribute to the tech ecosystem.</p>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <p>Finished my primary school education at Kathonzweni A.I.C Boarding Primary School in 2016</p>
+            <p>Attended Loreto High School Limuru for my highschool studies from 2017-2021</p>
+            <p>Currently pursuing my degree in Information Technology</p>
+            <a href="Cassandra_Mghoi_Resume.pdf" class="cv-button" download>Download CV</a>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <p>I'm particularly excited about:</p>
+            <ul style="margin-left: 20px;">
+                <li>Web Development</li>
+                <li>Problem Solving through Technology</li>
+                <li>Learning New Programming Languages</li>
+                <li>Technology Innovation</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>My Calorie Pal helps with tracking one's calorie intake for the day and informs you when you've achieved your intake of the day</p>
+                    <a href="https://github.com/Ceemghoi/My-Calorie-Pal-3.git" style="color: #00ffff;">View Project</a>
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
